@@ -2,6 +2,16 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {IoMdSearch} from "react-icons/io";
 
+import start from "../assets/Nav/start.svg";
+import sports from "../assets/Nav/sports.svg";
+import mythology from "../assets/Nav/entertainment.svg";
+import art from "../assets/Nav/art-and-literature.svg";
+import geography from "../assets/Nav/geography.svg";
+import history from "../assets/Nav/history.svg";
+import langages from "../assets/Nav/languages.svg";
+import science from "../assets/Nav/science-and-nature.svg";
+import trivia from "../assets/Nav/trivia.svg";
+
 const Navbar = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -12,7 +22,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="w-full flex justify-center items-center fixed z-10 ">
-                <div className="w-4/5 flex justify-between items-center border-b py-2">
+                <div className="w-full md:w-4/5 flex justify-between items-center border-b py-2">
                     {/* Logo Section */}
                     <Link to="/" className="flex items-center">
                         <p className="font-extrabold text-6xl chewy-regular text-red-400 stroke-black">
@@ -65,6 +75,59 @@ const Navbar = () => {
                             Sign in
                         </Link>
                     </div>
+                </div>
+            </nav>
+            <nav className="w-full flex justify-center items-center fixed mt-24 z-10 ">
+                <div className="hidden md:block"></div>
+                <div className="md:w-4/5 flex justify-between items-center py-2 ">
+                    <Link className="flex items-center flex-col m-1 ">
+                        <img src={start} alt="start" className="h-8 w-8" />
+                        <p className="font-bold text-xs">Start</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img src={sports} alt="sports" className="h-8 w-8" />
+                        <p className="font-bold text-xs">Sports</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img
+                            src={mythology}
+                            alt="mythology"
+                            className="h-8 w-8"
+                        />
+                        <p className="font-bold text-xs">Mythology</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img src={art} alt="art" className="h-8 w-8" />
+                        <p className="font-bold text-xs">Art & Literature</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img
+                            src={geography}
+                            alt="geography"
+                            className="h-8 w-8"
+                        />
+                        <p className="font-bold text-xs">Geography</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img src={history} alt="history" className="h-8 w-8" />
+                        <p className="font-bold text-xs">History</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img
+                            src={langages}
+                            alt="languages"
+                            className="h-8 w-8"
+                        />
+                        <p className="font-bold text-xs">Languages</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img src={trivia} alt="trivia" className="h-8 w-8" />
+                        <p className="font-bold text-xs">Trivia</p>
+                    </Link>
+                    <Link className="flex items-center flex-col m-1">
+                        <img src={science} alt="science" className="h-8 w-8" />
+                        <p className="font-bold text-xs">Science & Nature</p>
+                    </Link>
                 </div>
             </nav>
         </>
