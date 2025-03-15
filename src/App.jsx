@@ -7,7 +7,7 @@ import About from "./pages/About";
 
 function App() {
     return (
-        <div>
+        <div className="bg-gray-100">
             <Router>
                 <Navbar />
                 <Routes>
