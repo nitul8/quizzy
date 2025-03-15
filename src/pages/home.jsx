@@ -5,7 +5,7 @@ import Button from "../components/Button";
 
 const Home = () => {
     return (
-        <div className="w-full min-h-screen flex justify-center items-center relative bg-gradient-to-b from-gray-100 to-gray-300">
+        <div className="w-full min-h-screen flex justify-center items-center relative">
             <div className="max-w-5xl flex flex-col md:flex-row items-center justify-center bg-white shadow-2xl rounded-xl p-8 md:p-12">
                 {/* Left Side - Text Content */}
                 <div className="text-center md:text-left space-y-6 max-w-xl">

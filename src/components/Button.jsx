@@ -5,7 +5,7 @@ const Button = ({to, children, className = "bg-gray-900 text-white"}) => {
     return (
         <div className="relative inline-flex items-center justify-center md:gap-4 group">
             {/* Glowing Background */}
-            <div className="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200" />
+            <div className="absolute inset-0 duration-1000 opacity-60 transition-all md:bg-purple-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200" />
 
             {/* Button */}
             <Link
